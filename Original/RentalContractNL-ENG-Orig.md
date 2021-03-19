@@ -1,19 +1,12 @@
-Note=Temporary Choices:
-
-Why.sec={Why.Alt1.sec}
-
-3.sec={3.Alt2.sec}
-
-4.1.2.sec={4.1.2.Alt2.sec}
-
-
-Note=Form -----------------
-
-Ti=TENANCY AGREEMENT FOR RESIDENTIAL ACCOMMODATION   
+Doc.Ti=TENANCY AGREEMENT FOR RESIDENTIAL ACCOMMODATION   
 
 Note=In accordance with the model drawn up by the Netherlands Real Estate Council (ROZ) on 20 March 2017. 
 
 Note=Reference to this model and its use are permitted only if the inserted, added or divergent text is clearly recognisable as such. Any additions and divergences should preferably be included in the “Special Provisions” article. The Netherlands Real Estate Council rejects any liability for adverse consequences arising from the use of the text of this model.
+
+Head.Div={Head.Sec}<br>
+
+Head.Sec=<center>{Doc.Ti}<br>{EffectiveDate.YMD}</center>
 
 
 Parties.Div=<br>{Parties.Sec}<br>
@@ -49,12 +42,11 @@ AND
 
 Parties.00.sec=(if applicable, both jointly and each individually), hereinafter to be referred to as the ‘tenant’,
 
-
 Why.Ti=WHEREAS:
 
 Why.Alt1.Ti=[option 1:] 
 
-Why.Alt1.0.sec=Indefinite period of time
+Why.Alt1.qqq=Indefinite period of time
 
 Why.Alt1.1.sec=The parties expressly opt for a long(er)-term tenancy agreement and a (more) durable relationship rather than a short-term tenancy agreement;
 
@@ -66,7 +58,7 @@ Why.Alt1.=[G/Z/ol/s3]
 
 Why.Alt2.Ti=[option 2:]	
 
-Why.Alt2.0.sec=Indefinite period of time subject to a minimum term of twelve (12) months
+Why.Alt2.qqq=Indefinite period of time subject to a minimum term of twelve (12) months
 
 Why.Alt2.1.sec=The parties expressly opt, also with a view to the investments made by them for purposes of this tenancy agreement, for a long(er)-term tenancy agreement and a (more) durable relationship, which will continue for a minimum period of twelve (12) months, rather than a short-term tenancy agreement;
 
@@ -80,9 +72,17 @@ Why.Alt2.=[G/Z/ol/s4]
 
 Why.Alt3.Ti=[option 3:]	
 
-Why.Alt3.0.sec=Limited period of time to a maximum of two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation) or less 
+Why.Alt3.qqq=Limited period of time to a maximum of two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation) or less 
 
-Why.Alt3.1.sec=The parties opt for a short-term tenancy agreement [for a term of two (2) years or less pursuant to Article 7:271(1) of the Dutch Civil Code as it regards self-contained accommodation/for a term of five (5) years or less pursuant to Article 7:271(1) of the Dutch Civil Code as it regards non-self-contained accommodation*];
+Why.Alt3.1.Intro.Cl=The parties opt for a short-term tenancy agreement
+
+Why.Alt3.1.Alt1.sec={Why.Alt3.1.Intro.Cl} for a term of two (2) years or less pursuant to Article 7:271(1) of the Dutch Civil Code as it regards self-contained accommodation;
+
+Why.Alt3.1.Alt2.sec={Why.Alt3.1.Intro.Cl} for a term of five (5) years or less pursuant to Article 7:271(1) of the Dutch Civil Code as it regards non-self-contained accommodation;
+
+Why.Alt3.1.SecName=Why.Alt3.1
+
+Why.Alt3.1.=[G/Z/Alt/2]
 
 Why.Alt3.2.sec=If, after expiry of the limited period of time, the tenancy agreement is continued, the tenant will be entitled to security of tenure;
 
@@ -90,7 +90,7 @@ Why.Alt3.=[G/Z/ol/s2]
 
 Why.Alt4.Ti=[option 4:]
 
-Why.Alt4.0.sec=Limited period of time exceeding two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation) 
+Why.Alt4.qqq=Limited period of time exceeding two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation)
 
 Why.Alt4.1.sec=The parties expressly opt for a long(er)-term tenancy agreement and a (more) durable relationship, which will continue for a period exceeding two (2) years (for self-contained accommodation) or five (5) years (for non-self-contained accommodation), rather than a short-term tenancy agreement;
 
@@ -114,7 +114,15 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 1.1.qq=1.1
 
-1.1.1.sec=The landlord will let to the tenant, as the tenant will rent from the landlord, the [self-contained/non-self-contained*] residential accommodation, hereinafter: the “rented object”, known locally as .................................................. in .............................................. 
+1.1.1.sec=The landlord will let to the tenant, as the tenant will rent from the landlord, the {RentedObject.self-contained.sec} residential accommodation, hereinafter: the “rented object”, known locally as {RentedObject.Description.cl} in {RentedObject.Location.cl}.
+
+RentedObject.self-contained.Alt1.sec=self-contained
+
+RentedObject.self-contained.Alt2.sec=non-self-contained
+
+RentedObject.self-contained.SecName=RentedObject.self-contained
+
+RentedObject.self-contained.=[G/Z/Alt/2]
 
 1.1.2.sec=The condition of the rented object is described in the delivery report to be attached hereto as an annex and to be initialled by the parties. The rented object is further specified on the floor plan/drawing* attached hereto as an annex and initialled by the parties.
 
@@ -126,50 +134,58 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 1.2.2.0.sec=More specifically, the rented object is designated for use as residential accommodation only for: 
 
-1.2.2.1.sec=[- a disabled person within the meaning of Article 7:274a(2) DCC 
+1.2.2.1.Alt1.sec=a disabled person within the meaning of Article 7:274a(2) DCC 
 
-1.2.2.2.sec=- an elderly person within the meaning of Article 7:274b DCC 
+1.2.2.1.Alt2.sec=an elderly person within the meaning of Article 7:274b DCC 
 
-1.2.2.3.sec=- a youth within the meaning of Article 7:274c(2) DCC 
+1.2.2.1.Alt3.sec=a youth within the meaning of Article 7:274c(2) DCC 
 
-1.2.2.4.sec=- a student within the meaning of Article 7:274d(2) DCC 
+1.2.2.1.Alt4.sec=a student within the meaning of Article 7:274d(2) DCC 
 
-1.2.2.5.sec=- a doctoral candidate within the meaning of Article 7:274e(2) DCC 
+1.2.2.1.Alt5.sec=a doctoral candidate within the meaning of Article 7:274e(2) DCC 
 
-1.2.2.6.sec=- a large family within the meaning of Article 7:274f(2) DCC*] 
+1.2.2.1.Alt6.sec=a large family within the meaning of Article 7:274f(2) DCC
 
-1.2.2.=[G/Z/ol/s6]
+1.2.2.1.SecName=1.2.2.1
+
+1.2.2.1.=[G/Z/Alt/6]
+
+1.2.2.=[G/Z/ol/s1]
 
 1.2.3.0.sec=After termination of the tenancy agreement, the rented object will again be rented to:
 
-1.2.3.1.sec=[- a disabled person within the meaning of Article 7:274a(2) DCC  
+1.2.3.1.Alt1.sec=a disabled person within the meaning of Article 7:274a(2) DCC  
 
-1.2.3.2.sec=- an elderly person within the meaning of Article 7:274b DCC 
+1.2.3.1.Alt2.sec=an elderly person within the meaning of Article 7:274b DCC 
 
-1.2.3.3.sec=- a youth within the meaning of Article 7:274c(2) DCC 
+1.2.3.1.Alt3.sec=a youth within the meaning of Article 7:274c(2) DCC 
 
-1.2.3.4.sec=- a student within the meaning of Article 7:274d(2) DCC 
+1.2.3.1.Alt4.sec=a student within the meaning of Article 7:274d(2) DCC 
 
-1.2.3.5.sec=- a doctoral candidate within the meaning of Article 7:274e(2) DCC
+1.2.3.1.Alt5.sec=a doctoral candidate within the meaning of Article 7:274e(2) DCC
 
-1.2.3.6.sec=- a large family within the meaning of Article 7:274f(2) DCC*]. 
+1.2.3.1.Alt6.sec=a large family within the meaning of Article 7:274f(2) DCC
 
-1.2.3.=[G/Z/ol/s6]
+1.2.3.1.SecName=1.2.3.1
 
-1.2.=[G/Z/ol/s3]
+1.2.3.1.=[G/Z/Alt/6]
+
+1.2.3.=[G/Z/ol/s1]
+
+1.2.=[G/Z/paras/s3]
 
 1.2.=[G/Z/ol/s4]
 
 
 1.3.sec=Without the prior written consent of the landlord, the tenant may not put the rented object to any use other than as described in article 1.2. 
 
-1.4.sec=Upon entering into the tenancy agreement, the tenant [did/did not*] receive a copy of the energy label within the meaning of the Dutch Energy Performance (Buildings) Decree [Besluit energieprestatie gebouwen] and/or a copy of the Energy index in respect of the rented object. 
+1.4.sec=Upon entering into the tenancy agreement, the tenant {Tenant.ReceivedEnergyLabel.did/did not} receive a copy of the energy label within the meaning of the Dutch Energy Performance (Buildings) Decree <i>[Besluit energieprestatie gebouwen]</i> and/or a copy of the Energy index in respect of the rented object. 
 
 1.=[G/Z/ol/s4]
 
 2.Ti=Conditions
 
-2.1.sec=2.1 This tenancy agreement requires the parties to comply with the statutory provisions on tenancy of residential accommodation, to the extent not provided otherwise herein. The ‘GENERAL PROVISIONS FOR TENANCY OF RESIDENTIAL ACCOMMODATION’, as drawn up on 20 March, filed with the Clerk of the District Court at The Hague on 12 April 2017 and are registered there under number 2017.21, hereinafter referred to as the ‘general provisions’, form part of this tenancy agreement. Such general provisions are known to the parties. The tenant has received a copy. The general provisions will apply except to the extent expressly provided otherwise in this tenancy agreement or if application of these general provisions is not possible in respect of the rented object.
+2.1.sec=This tenancy agreement requires the parties to comply with the statutory provisions on tenancy of residential accommodation, to the extent not provided otherwise herein. The ‘GENERAL PROVISIONS FOR TENANCY OF RESIDENTIAL ACCOMMODATION’, as drawn up on 20 March, filed with the Clerk of the District Court at The Hague on 12 April 2017 and are registered there under number 2017.21, hereinafter referred to as the ‘general provisions’, form part of this tenancy agreement. Such general provisions are known to the parties. The tenant has received a copy. The general provisions will apply except to the extent expressly provided otherwise in this tenancy agreement or if application of these general provisions is not possible in respect of the rented object.
 
 2.=[G/Z/ol/s1]
 
@@ -177,7 +193,7 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 3.Alt1.qq=[option 1:] Indefinite period of time
 
-3.Alt1.1.sec=This tenancy agreement has been entered into for an indefinite period of time with effect from ……………
+3.Alt1.1.sec=This tenancy agreement has been entered into for an indefinite period of time with effect from {Tenancy.Begin.YMD}.
 
 3.Alt1.2.sec=On the effective date of the tenancy agreement, the landlord will make the rented object available to the tenant, provided that the tenant has performed all the existing obligations vis-à-vis the landlord. If the effective date does not coincide with a workday, the rented object will be made available on the next workday.
 
@@ -187,7 +203,7 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 3.Alt2.qq=[option 2:] Indefinite period of time subject to a minimum term of twelve (12) months 
 
-3.Alt2.1.sec=This tenancy agreement has been entered into for an indefinite period subject to a minimum of twelve (12) months, with effect from …………. 
+3.Alt2.1.sec=This tenancy agreement has been entered into for an indefinite period subject to a minimum of twelve (12) months, with effect from {Tenancy.Begin.YMD}.
 
 3.Alt2.2.sec=On the effective date of the tenancy agreement, the landlord will make the rented object available to the tenant, provided that the tenant has performed all the existing obligations vis-à-vis the landlord. If the effective date does not coincide with a workday, the rented object will be made available on the next workday.
 
@@ -201,19 +217,27 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 3.Alt3.qq=[option 3:]  Limited period of time to a maximum of two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation) or less.
 
-3.Alt3.1.sec=This tenancy agreement has been entered into for a maximum period of two (2) years or less (for self-contained accommodation)/a maximum period of five (5) years or less (for non-self-contained accommodation), to wit ……………[months/years*], with effect from ……... continuing to ……………………………… inclusive.
+3.Alt3.1.sec=This tenancy agreement has been entered into for a maximum period of two (2) years or less (for self-contained accommodation)/a maximum period of five (5) years or less (for non-self-contained accommodation), to wit {Tenancy.Duration.months/years}, with effect from {Tenancy.Begin.YMD} continuing to {Tenancy.End.YMD} inclusive.
 
 3.Alt3.2.sec=On the effective date of the tenancy agreement, the landlord will make the rented object available to the tenant, provided that the tenant has performed all the existing obligations vis-à-vis the landlord. If the effective date does not coincide with a workday, the rented object will be made available on the next workday.
 
 3.Alt3.3.sec=During the period referred to in article 3.1, this tenancy agreement cannot be terminated early by the landlord.
 
-3.Alt3.=[G/Z/ol/s3]
+3.Alt3.4.sec=The tenancy agreement will end upon expiry of the period referred to in article 3.1 if the period referred to in article 3.1 is less than or equal to {Tenancy.ShortTermCondition.sec} and the landlord notifies the tenant, in good time and in accordance with article 18.2 of the general provisions, of the day on which the tenancy agreement will end. If the landlord fails, or fails punctually, to notify the tenant and the period referred to in article 3.1 expires, the tenancy agreement will continue for an indefinite period of time. In such event, notice of termination of the tenancy agreement is to be given in accordance with article 18.1 of the general provisions.
 
-3.Alt3.4.sec=The tenancy agreement will end upon expiry of the period referred to in article 3.1 if the period referred to in article 3.1 is less than or equal to [two (2) years for self-contained accommodation/five (5) years for non-self-contained accommodation*] and the landlord notifies the tenant, in good time and in accordance with article 18.2 of the general provisions, of the day on which the tenancy agreement will end. If the landlord fails, or fails punctually, to notify the tenant and the period referred to in article 3.1 expires, the tenancy agreement will continue for an indefinite period of time. In such event, notice of termination of the tenancy agreement is to be given in accordance with article 18.1 of the general provisions.
+Tenancy.ShortTermCondition.Alt1.sec=two (2) years for self-contained accommodation
+
+Tenancy.ShortTermCondition.Alt2.sec=five (5) years for non-self-contained accommodation
+
+Tenancy.ShortTermCondition.SecName=Tenancy.ShortTermCondition
+
+Tenancy.ShortTermCondition.=[G/Z/Alt/2]
+
+3.Alt3.=[G/Z/ol/s4]
 
 3.Alt4.qq=[option 4:] Limited period of time exceeding two (2) years (for self-contained accommodation)/five (5) years (for non-self-contained accommodation)
 
-3.Alt4.1.sec=This tenancy agreement has been entered into for a period exceeding two (2) years (for self-contained accommodation)/exceeding five (5) years (for non-self-contained accommodation), to wit ………….. [months/years*], with effect from ………… continuing to …………… inclusive.
+3.Alt4.1.sec=This tenancy agreement has been entered into for a period exceeding two (2) years (for self-contained accommodation)/exceeding five (5) years (for non-self-contained accommodation), to wit {Tenancy.Duration.months/years}, with effect from {Tenancy.Begin.YMD} continuing to {Tenancy.End.YMD} inclusive.
 
 3.Alt4.2.sec=On the effective date of the tenancy agreement, the landlord will make the rented object available to the tenant, provided that the tenant has performed all the existing obligations vis-à-vis the landlord  If the effective date does not coincide with a workday, the rented object will be made available on the next workday.
 
@@ -231,9 +255,9 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 4.Ti=Payment obligation, payment period
 
-4.1.0.sec=4.1 As from the effective date of this tenancy agreement, the tenant's payment obligation will consist of:
+4.1.0.sec=As from the effective date of this tenancy agreement, the tenant's payment obligation will consist of:
 
-4.1.1.sec=- the rent
+4.1.1.sec=the rent
 
 4.1.2.Alt1.sec=the fee in connection with the supply of electricity, gas and water for consumption in the living area of the rented object on the basis of an individual meter (costs of mains services based on an individual meter).
 
@@ -255,35 +279,43 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 4.3.=[G/Z/paras/s2]
 
-4.4.sec=The rent and the advance payment as referred to in articles 4.2 and 4.3 will be payable in advance, at all times on or before the first day of the period to which the payment relates [in accordance with the method designated by the landlord/by way of transfer to account number ………………………. in the name of ………………………………………………………..*].
+4.4.sec=The rent and the advance payment as referred to in articles 4.2 and 4.3 will be payable in advance, at all times on or before the first day of the period to which the payment relates {PaymentMethod.sec}.
+
+PaymentMethod.Alt1.sec=in accordance with the method designated by the landlord
+
+PaymentMethod.Alt2.sec=by way of transfer to account number {PaymentTo.AccountNumber.#} in the name of {PaymentTo.AccountName.cl}
+
+PaymentMethod.SecName=PaymentMethod
+
+PaymentMethod.=[G/Z/Alt/2]
 
 4.5.0.sec=The following amounts will be due per payment period of one month:
 
-4.5.1.sec=- the rent									EUR 
+4.5.1.sec=the rent {Payment.Monthly.Rent.EUR}
 
-4.5.2.sec=- the advance on the fee in connection with the supply of electricity, gas and water for consumption in the living area of the rented object on the basis of an individual meter in that part							EUR 
+4.5.2.sec=the advance on the fee in connection with the supply of electricity, gas and water for consumption in the living area of the rented object on the basis of an individual meter in that part {Payment.Monthly.Utilities.EUR}
 
-4.5.3.sec=- the advance on the fee due for the provision of the other supplies and services to be provided in connection with the occupation of the rented object 								EUR		 
+4.5.3.sec=the advance on the fee due for the provision of the other supplies and services to be provided in connection with the occupation of the rented object {Payment.Monthly.Services.EUR}		 
 
 4.5.4.sec=00.
 
-4.5.00.1.sec=So that the total monthly amount due by the tenant will be				EUR
+4.5.00.1.sec=So that the total monthly amount due by the tenant will be	{Payment.Monthly.Total.EUR}
 
-4.5.00.2.sec=In words ……………………………………………… euros.	
+4.5.00.2.sec=In words {Payment.Monthly.Total.InWords}.	
 
 4.5.00.=[G/Z/paras/s2]
 
 4.5.=[G/Z/ol/s3]
 
-4.6.sec=With a view to the effective date of this tenancy agreement, the initial payment period will relate to the period of …………………. to …………………………….. inclusive, and the amount due for such initial period will be EUR .................... The tenant is to pay such amount on or before ………………………....
+4.6.sec=With a view to the effective date of this tenancy agreement, the initial payment period will relate to the period of {Tenancy.Begin.YMD}. to {Tenancy.InitialPeriod.End.YMD}, inclusive, and the amount due for such initial period will be {Payment.InitialPeriod.EUR} The tenant is to pay such amount on or before {Payment.InitialPeriod.DueDate.YMD}.
 
 4.=[G/Z/ol/s6]
 
 5.Ti=Rent adjustment
 
-5.1.sec=If the rented object is residential accommodation subject to a non-decontrolled rent, the rent may be adjusted, upon a proposal by the landlord, for the first time on …………………………, and subsequently annually by a percentage not exceeding the percentage permitted by law as prevailing on the effective date of such adjustment for residential accommodation subject to a non-decontrolled rent, failing which the rent will be adjusted in accordance with the provisions of article 5.2. In addition to the percentage referred to in the foregoing sentence, the rent may be adjusted, upon a proposal by the landlord, by a percentage not exceeding the percentage permitted by law as prevailing on the effective date of such adjustment for the income-related rent increase, if the rented object is self-contained accommodation subject to a non-decontrolled rent. To the extent required, the parties declare that the provisions of Article 7:252a DCC will apply mutatis mutandis and, to the extent required, the tenant consents to the application for a certificate as referred to in Article 7:252a(3) DCC.
+5.1.sec=If the rented object is residential accommodation subject to a non-decontrolled rent, the rent may be adjusted, upon a proposal by the landlord, for the first time on {RentAdjustment.Non-Decontrolled.FirstDate.YMD}, and subsequently annually by a percentage not exceeding the percentage permitted by law as prevailing on the effective date of such adjustment for residential accommodation subject to a non-decontrolled rent, failing which the rent will be adjusted in accordance with the provisions of article 5.2. In addition to the percentage referred to in the foregoing sentence, the rent may be adjusted, upon a proposal by the landlord, by a percentage not exceeding the percentage permitted by law as prevailing on the effective date of such adjustment for the income-related rent increase, if the rented object is self-contained accommodation subject to a non-decontrolled rent. To the extent required, the parties declare that the provisions of Article 7:252a DCC will apply mutatis mutandis and, to the extent required, the tenant consents to the application for a certificate as referred to in Article 7:252a(3) DCC.
 
-5.2.sec=If the rented object is self-contained accommodation subject to a decontrolled rent for residential accommodation, the provisions of article 5.1 will not apply. In such event, the rent will be adjusted, for the first time on ......................................., and subsequently annually in accordance with the provisions of article 16 of the general provisions. On top of, and simultaneously with, the annual adjustment in accordance with article 16 of the general provisions, the landlord will be entitled to increase the rent by no more than ...%.
+5.2.sec=If the rented object is self-contained accommodation subject to a decontrolled rent for residential accommodation, the provisions of article 5.1 will not apply. In such event, the rent will be adjusted, for the first time on {RentAdjustment.Decontrolled.FirstDate.YMD}, and subsequently annually in accordance with the provisions of article 16 of the general provisions. On top of, and simultaneously with, the annual adjustment in accordance with article 16 of the general provisions, the landlord will be entitled to increase the rent by no more than {RentAdjustment.Decontrolled.MaxPercentage.%}.
 
 5.=[G/Z/ol/s2]
 
@@ -299,7 +331,7 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 7.2.sec={Supplies.2.sec}
 
-7.3.sec={Supplies.1.sec}
+7.3.sec={Supplies.3.sec}
 
 7.=[G/Z/ol/s3]
 
@@ -327,7 +359,7 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 9.1.0.sec=Until the landlord gives notice to the contrary, the following person will act as manager:
 
-9.1.1.sec=…………………………….
+9.1.1.sec={Manager.ContactInfo.cl}
 
 9.1.=[G/Z/ol-none/s1]
 
@@ -337,9 +369,17 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 10.Ti=Security deposit
 
-10.1.sec=Before the effective date, the tenant will pay a security deposit in the amount of EUR ……… (in words: ……………………….. euros) in accordance with the method indicated in article 4.4. 
+10.1.sec=Before the effective date, the tenant will pay a security deposit in the amount of {Payment.SecurityDeposit.Amount.EUR} (in words: {Payment.SecurityDeposit.Amount.InWords}) in accordance with the method indicated in article 4.4. 
 
-10.2.sec=The security deposit [will/will not*] accrue interest.
+10.2.sec=The security deposit {SecurityDeposit.Interest.sec}.
+
+SecurityDeposit.Interest.Alt1.sec=will accrue interest
+
+SecurityDeposit.Interest.Alt2.sec=will not accrue interest
+
+SecurityDeposit.Interest.SecName=SecurityDeposit.Interest
+
+SecurityDeposit.Interest.=[G/Z/Alt/2]
 
 10.=[G/Z/ol/s2]
 
@@ -347,19 +387,19 @@ AgreeThat.sec=HAVE AGREED AS FOLLOWS:
 
 11.1.0.sec=The tenant and the landlord agree that, if the tenant fails to perform his obligation/s under the following provision/s, he will forfeit to the landlord an immediately payable penalty as stated below:
 
-11.1.1.sec=a penalty in the amount of EUR ....... for each calendar day that the violation continues, in the event of violation of articles 1 (use), 9 (garden), 13.1 and 13.2 (reporting damage), 14.1 (general areas), 14.3 under a (pets), 14.4 (nuisance), 21.1 and 21.2 (security deposit) of the general provisions, subject to a maximum of EUR .….., without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
+11.1.1.sec=a penalty in the amount of {Penalty.ViolationType1.Daily.EUR} for each calendar day that the violation continues, in the event of violation of articles 1 (use), 9 (garden), 13.1 and 13.2 (reporting damage), 14.1 (general areas), 14.3 under a (pets), 14.4 (nuisance), 21.1 and 21.2 (security deposit) of the general provisions, subject to a maximum of {Penalty.ViolationType1.MaxTotal.EUR}, without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
 
-11.1.2.sec=a penalty in the amount of EUR ....... for each calendar day that the violation continues, in the event of violation of articles 4.1 and 4.2 (changes and additions), 8 (aerials), 10 (shading devices), 14.2 and 14.3 under b (advertising, venting ducts and flues) of the general provisions, subject to a maximum of EUR .….., without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
+11.1.2.sec=a penalty in the amount of {Penalty.ViolationType2.Daily.EUR} for each calendar day that the violation continues, in the event of violation of articles 4.1 and 4.2 (changes and additions), 8 (aerials), 10 (shading devices), 14.2 and 14.3 under b (advertising, venting ducts and flues) of the general provisions, subject to a maximum of {Penalty.ViolationType2.MaxTotal.EUR}, without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
 
-11.1.3.sec=a penalty in the amount of EUR ....... for each calendar day that the violation continues, in the event of violation of article 1.3 (change of designated use) of this tenancy agreement, and of articles 12 (access), 15.2 (hazardous substances), 19 (punctual and proper re-delivery) of the general provisions, subject to a maximum of EUR .….., without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
+11.1.3.sec=a penalty in the amount of {Penalty.ViolationType3.Daily.EUR} for each calendar day that the violation continues, in the event of violation of article 1.3 (change of designated use) of this tenancy agreement, and of articles 12 (access), 15.2 (hazardous substances), 19 (punctual and proper re-delivery) of the general provisions, subject to a maximum of {Penalty.ViolationType3.MaxTotal.EUR}, without prejudice to the tenant's obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages;
 
-11.1.4.sec=a penalty in the amount of EUR ........ per violation, to be increased by an additional penalty in the amount of EUR ....... for each calendar day that the violation continues, in the event of violation of article 2 ((temporary) subtenancy) of the general provisions, subject to a maximum of EUR ......., without prejudice to (i) his obligation still to perform such obligation, and (ii) the landlord's right to claim (additional) damages, and (iii) the obligation to disgorge any (estimated) profit generated by him as a result of acts in violation of this prohibition;
+11.1.4.sec=a penalty in the amount of {Penalty.ViolationType4.PerEvent.EUR} per violation, to be increased by an additional penalty in the amount of {Penalty.ViolationType4.Daily.EUR} for each calendar day that the violation continues, in the event of violation of article 2 ((temporary) subtenancy) of the general provisions, subject to a maximum of {Penalty.ViolationType4.MaxTotal.EUR}, without prejudice to (i) his obligation still to perform such obligation, and (ii) the landlord's right to claim (additional) damages, and (iii) the obligation to disgorge any (estimated) profit generated by him as a result of acts in violation of this prohibition;
 
-11.1.5.sec=a penalty in the amount of EUR ........ per violation, to be increased by an additional penalty in the amount of EUR ....... for each calendar day that the violation continues, in the event of violation of article 14.3 under c (hemp and such like) of the general provisions, subject to a maximum of EUR ......., without prejudice to (i) his obligation still to perform such obligation, and (ii) the landlord's right to claim (additional) damages, and (iii) the obligation to disgorge any (estimated) profit generated by him as a result of acts in violation of this prohibition.
+11.1.5.sec=a penalty in the amount of {Penalty.ViolationType5.PerEvent.EUR} per violation, to be increased by an additional penalty in the amount of {Penalty.ViolationType5.Daily.EUR} for each calendar day that the violation continues, in the event of violation of article 14.3 under c (hemp and such like) of the general provisions, subject to a maximum of {Penalty.ViolationType5.MaxTotal.EUR}, without prejudice to (i) his obligation still to perform such obligation, and (ii) the landlord's right to claim (additional) damages, and (iii) the obligation to disgorge any (estimated) profit generated by him as a result of acts in violation of this prohibition.
 
 11.1.=[G/Z/ol-a/s5]
 
-11.2.sec=For each violation of an obligation under this tenancy agreement and the associated general provisions, to the extent not already listed in article 11.1 above, the tenant will forfeit to the landlord an immediately payable penalty in the amount of EUR ..... per calendar day, subject to a maximum of EUR ...., without prejudice to his obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages. If the landlord is a professional party, this article 11.2 will not apply. 
+11.2.sec=For each violation of an obligation under this tenancy agreement and the associated general provisions, to the extent not already listed in article 11.1 above, the tenant will forfeit to the landlord an immediately payable penalty in the amount of {Penalty.ViolationTypeOther.Daily.EUR} per calendar day, subject to a maximum of {Penalty.ViolationTypeOther.MaxTotal.EUR}, without prejudice to his obligation still to perform such obligation, and without prejudice to the landlord's right to claim (additional) damages. If the landlord is a professional party, this article 11.2 will not apply.
 
 11.=[G/Z/ol/s2]
 
@@ -404,4 +444,7 @@ TenantAcknowledge.GeneralConditions.1.sec=Separate signature/s of the tenant/s t
 TenantAcknowledge.GeneralConditions.2.sec=•	Tenant/s signature/s:
 
 TenantAcknowledge.GeneralConditions.=[G/Z/paras/s2]
+
+Ti=</i>
+
 =[G/Z/ol/12]
